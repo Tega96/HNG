@@ -1,0 +1,9 @@
+
+.test-profile-card {
+    display: flex;
+    flex-direction: column;
+    max-width: 200px;
+    max-height: 200px;
+
+}
+
