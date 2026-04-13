@@ -1,0 +1,37 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+.todoModal {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    background-color: #33b377;
+    width: 50%;
+    height: 250px;
+    padding: 20px;
+    margin: 10px;
+    position: relative;
+    left: 40px;
+    top: 50px;
+    border-radius: 10px;
+}
+
+.close {
+    float: right;
+    font-size: larger;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+     justify-content: space-between;
+}
+
+.smaller {
+    display: flex;
+    
+}
