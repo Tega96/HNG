@@ -4,25 +4,42 @@
     box-sizing: border-box;
 }
 
-
+/* Modal background overlay */
 .todoModal {
-    display: flex;
-    flex-direction: column;
-    border: 1px solid black;
-    background-color: #33b377;
-    width: 50%;
-    height: 250px;
-    padding: 20px;
-    margin: 10px;
-    position: relative;
-    left: 40px;
-    top: 50px;
-    border-radius: 10px;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
 }
 
+
+
+/* Modal content box */
+.modal-content {
+    background-color: white;
+    margin: 15% auto;
+    padding: 20px;
+    width: 80%;
+    border-radius: 10px;
+    max-width: 500px;
+    position: relative;
+}
+
+/* Close button */
 .close {
+    color: #aaa;
     float: right;
-    font-size: larger;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: black;
 }
 
 .content {
