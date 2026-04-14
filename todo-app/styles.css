@@ -6,7 +6,7 @@
 
 /* Modal background overlay */
 .todoModal {
-    display: none;
+    display: block;
     position: fixed;
     z-index: 1;
     left: 0;
@@ -51,4 +51,14 @@
 .smaller {
     display: flex;
     
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+}
+
+.art {
+    display: flex;
+    align-items: start;
 }
