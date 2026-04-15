@@ -9,8 +9,10 @@
 <body>
     <main >
         <div>
-            <p class="">Click on this button to add tasks</p>
-            <button id="addTaskBtn">Add task</button>
+            <button id="addTaskBtn" class="addIconBtn">
+                <img src="./public/icons/circle-plus.png" alt="Add icon" class="addIcon">
+                Add task
+            </button>
         </div>
 
 
@@ -22,28 +24,30 @@
                 <div class="content">
                     <div class="">
                         <div class="task">
-                            <input type="text" placeholder="Title:" class="">
+                            <input type="text" placeholder="Title:" class="input">
                         </div>
                         <div class="task">
-                            <input type="text" placeholder="Description..." class="">
+                            <input type="text" placeholder="Description..." class="input">
                         </div>
                     </div>
-                    <div class="smaller">
+
+                    <div class="ctrlbtns">
                         <div class="" data-testid="test-todo-priority">
-                            <img src="./public/icons/file-exclamation-point.png" alt="priority" class="icon">
+                            <!-- <img src="./public/icons/file-exclamation-point.png" alt="priority" class="icon"> -->
                             <select name="priority" data-testid="test-todo-priority">
+                                <option value="">Select Priority</option>
                                 <option value="high"> High</option>
                                 <option value="medium">Medium</option>
                                 <option value="low">Low</option>
                             </select>
                         </div>
-                        <button class="" data-testid="test-todo-due-date">
+                        <button class="ctrlbtns" data-testid="test-todo-due-date">
                             <img src="./public/icons/calendar-days.png" alt="due data" class="icon">
                             <p data-testid="test-todo-due-date">Date</p>
                         </button>
-                        <button class="">
+                        <button class="ctrlbtns">
                             <img src="./public/icons/clock.png" alt="time icon" class="icon">
-                            <p class="" data-testid="test-todo-time-remaining">22: 23</p>
+                            <p class="" data-testid="test-todo-time-remaining">Duration</p>
                         </button>
                     </div>
     
@@ -53,6 +57,7 @@
             <div class=""></div>
         </article>
 
+        <!-- Created tasks-->
         <article>
             <div class="art" role="list">
                 <input type="checkbox" data-testid="test-todo-complete-toggle">
